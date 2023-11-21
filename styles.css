@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+/* Typography */
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsl(0, 0%, 95%);
+    padding: 0 30px;
+    font-size: 30px;
+}
+
+p {
+    font-size: 12px;
+    line-height: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0 30px;
+    min-width: 100px;
+}
+
+
+
+
+/* Layout */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.first-card {
+    background-color: hsl(31, 77%, 52%);
+    width: 70vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-self: center;
+}
+
+.sec-card {
+    background-color: hsl(184, 100%, 22%);
+    width: 70vw;
+    align-self: center;
+}
+
+.third-card {
+    background-color: hsl(179, 100%, 13%);
+    width: 70vw;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-self: center;
+}
+
+.icon {
+    width: 50px;
+    height: 30px;
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin: auto;
+        margin-top: 6em;
+    }
+
+    .first-card {
+        background-color: hsl(31, 77%, 52%);
+        width: 30%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .sec-card {
+        background-color: hsl(184, 100%, 22%);
+        width: 30%;
+    }
+
+    .third-card {
+        background-color: hsl(179, 100%, 13%);
+        width: 30%;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}
